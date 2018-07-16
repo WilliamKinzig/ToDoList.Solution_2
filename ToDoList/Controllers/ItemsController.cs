@@ -33,7 +33,6 @@ namespace ToDoList.Controllers
             Item item = Item.Find(id);
             return View(item);
         }
-        
 
         [HttpPost("/items/delete")]
         public ActionResult DeleteAll()
@@ -41,8 +40,6 @@ namespace ToDoList.Controllers
             Item.ClearAll();
             return View();
         }
-
-
 
     }
 }
